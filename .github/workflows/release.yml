@@ -44,6 +44,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - run: |
+          echo "Release Tag: $TAG"
+        env:
+          TAG: ${{ inputs.tag }}
+
       # - run: pnpm publish --tag latest
       #   env:
       #     NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
