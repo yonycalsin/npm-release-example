@@ -24,8 +24,7 @@ jobs:
         pnpm: [8.5.1]
 
     permissions:
-      contents: read
-      contents: write
+      contents: read|write
 
     steps:
       - name: Checkout Repo
